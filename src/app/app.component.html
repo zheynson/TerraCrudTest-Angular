@@ -1,0 +1,22 @@
+<header>
+  <div class="wrapper">
+
+    <div class="buttons mt-2 d-flex justify-content-center align-items-center">
+      <div class="panel" (click)="modal = true; create()"><img src="assets/plus.png" alt=""></div>
+      <div class="panel" (click)="delete(id)"><img src="assets/delete.png" alt=""></div>
+      <div class="panel" (click)="edit(id); modal = true"><img src="assets/edit.png" alt=""></div>
+    </div>
+    <app-module-window *ngIf="modal" (close)="modal = false"></app-module-window>
+  </div>
+</header>
+
+<app-start></app-start>
+
+
+
+
+
+
+
+
+
