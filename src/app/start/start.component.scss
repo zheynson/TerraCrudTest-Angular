@@ -2,6 +2,12 @@
   padding-top: 100px;
 }
 
+.card {
+  -webkit-box-shadow: 11px 10px 17px -3px rgba(34, 60, 80, 0.46);
+  -moz-box-shadow: 11px 10px 17px -3px rgba(34, 60, 80, 0.46);
+  box-shadow: 11px 10px 17px -3px rgba(34, 60, 80, 0.46);
+}
+
 .card.active {
   outline: 3px solid green;
 }
