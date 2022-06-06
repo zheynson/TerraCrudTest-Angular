@@ -1,0 +1,25 @@
+<div class="backdrop"></div>
+
+<form class="modal-window col-10 col-md-5 col-lg-5" [formGroup]="dataForm" (ngSubmit)="submit()">
+
+  <div class="mb-1">
+    <label for="exampleFormControlInput1" class="form-label"></label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Animal name" formControlName="title">
+  </div>
+
+  <div>
+    <label for="exampleFormControlInput1" class="form-label"></label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Photo link" formControlName="image">
+  </div>
+
+  <div class="mb-2">
+    <label for="exampleFormControlTextarea1" class="form-label"></label>
+    <input class="form-control" id="exampleFormControlTextarea1" placeholder="Description" formControlName="text">
+  </div>
+
+  <div class="two-buttons d-flex justify-content-between">
+    <button type="button" class="btn mt-1 mb-1" (click)="close.emit()">Close</button>
+    <button [disabled]="dataForm.invalid" type="submit" class="btn mt-1 mb-1">Done</button>
+  </div>
+
+</form>
